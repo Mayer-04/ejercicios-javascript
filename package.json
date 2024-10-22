@@ -1,0 +1,32 @@
+{
+  "name": "logica-javascript",
+  "version": "1.0.0",
+  "description": "Ejercicios de lógica de programación con JavaScript",
+  "main": "index.js",
+  "packageManager": "pnpm@9.12.2",
+  "type": "module",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "vitest",
+    "coverage": "vitest run --coverage"
+  },
+  "devDependencies": {
+    "vitest": "2.1.3",
+    "vite": "5.4.9"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Mayer-04/Logica-JavaScript.git"
+  },
+  "keywords": [
+    "JavaScript"
+  ],
+  "author": "Mayer Andres Chaves Prada",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Mayer-04/Logica-JavaScript/issues"
+  },
+  "homepage": "https://github.com/Mayer-04/Logica-JavaScript#readme"
+}
