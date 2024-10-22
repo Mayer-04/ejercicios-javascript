@@ -1,0 +1,29 @@
+/*
+* jsconfig.json 
+----------------
+Se utiliza principalmente para configurar el entorno de desarrollo y las herramientas que ayudan en la gestión del código.
+- Permite definir la versión de ECMAScript que estás utilizando en tu proyecto para habilitar características modernas.
+- Proporciona funcionalidades avanzadas, como el autocompletado de código, la navegación entre archivos, el linting.
+- Puedes configurar los "paths" (rutas) y los módulos del proyecto para que sea más sencillo importar archivos.
+*/
+
+{
+  "compilerOptions": {
+    "target": "ESNext", // Define la versión de ECMAScript
+    "module": "ES6", // Tipo de módulos que usas (es común usar "commonjs" o "es6")
+    "checkJs": false, // Habilita la verificación de errores en archivos .js
+    "baseUrl": ".", // La base de rutas es la raíz del proyecto
+    "paths": {
+      "@js/*": ["javascript/*"] // Crea un alias '@js' para la carpeta 'javascript'
+    }
+  },
+  "include": [
+    "javascript/**/*", // Incluye todos los archivos de la carpeta 'javascript' y sus subcarpetas
+    "node/*", // Solo incluye los archivos que están directamente la carpeta 'node' no incluye archivos en subcarpetas
+    "caracteristicas/*"
+  ],
+  "exclude": [
+    "node_modules", // Excluye la carpeta "node_modules"
+    "dist" // Excluye la carpeta "dist" si se genera código compilado
+  ]
+}
