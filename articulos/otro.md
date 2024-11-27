@@ -8,7 +8,11 @@ node --run dev
 - fnm, nvm, volta
 - `process.loadEnvFile()` estable desde la versión 22 de Nodejs.
 - `node --watch` estable desde Node 22
-- `node --run dev` 
+- `node --run dev`
 - `npm run lint : node --run lint`
 - `glob en fs` estable en Node 22
 - `npx is-my-node-vulnerable` Mirar las vulnerabilidades de las versiones de Node
+
+- Pero desde la versión 20.13.0 de Node, podemos usar la opción —watch de forma estable.
+
+Por ejemplo: node —watch index.js
