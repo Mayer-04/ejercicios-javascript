@@ -1,8 +1,11 @@
-/* 
-Encuentra la palabra más larga en una cadena.
-Devuelve la longitud de la palabra más larga en la oración proporcionada.
+/*
+* Longitud de la palabra más larga
 
-Tu respuesta debe ser un número. 
+Crea una función que encuentre la palabra más larga en una cadena de texto y 
+devuelva su longitud como número entero.
+
+Ejemplo: En "El zorro salta sobre el perro", la palabra más larga 
+es "sobre" (5 caracteres), por lo que la función debe retornar 5.
 */
 
 const cadenaMasLarga = function (cadena) {
@@ -19,7 +22,7 @@ const cadenaMasLarga = function (cadena) {
   return longitudCadena;
 };
 
-console.log(cadenaMasLarga("Esto es una cadena de texto de ejemplo"));
+console.log(cadenaMasLarga("Esto es una cadena de texto de ejemplo")); // 7
 
 // Segunda manera de realizar el ejercicio ✅
 const cadenaLarga = (cadena) => {
@@ -33,4 +36,4 @@ const cadenaLarga = (cadena) => {
   return longitudMaxima;
 };
 
-console.log(cadenaLarga("Esto es una cadena de texto de ejemplo"));
+console.log(cadenaLarga("El zorro salta sobre el perro")); // 5

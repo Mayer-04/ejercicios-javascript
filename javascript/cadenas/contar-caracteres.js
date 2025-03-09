@@ -1,6 +1,10 @@
-/* 
+/*
+Contador de caracteres
+
 Escribe una función que tome una cadena de texto y un carácter específico, 
-y devuelva el número de veces que ese carácter aparece en la cadena. 
+y devuelva el número de veces que ese carácter aparece en la cadena.
+
+Ejemplo: En "banana" con el carácter "a", debería devolver 3.
 */
 
 /**
@@ -20,5 +24,5 @@ const contarCaracteres = function (texto, caracter) {
 };
 
 // Ejemplo de uso 😁
-const palabra = "paisaje";
-console.log(contarCaracteres(palabra, "a"));
+const palabra = "banana";
+console.log(contarCaracteres(palabra, "a")); // 3

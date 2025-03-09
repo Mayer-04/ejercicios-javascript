@@ -2,11 +2,13 @@
 * Gestión de errores:
 - throw: Se utiliza para lanzar una excepción de forma explícita. 
 Puede ser cualquier tipo de dato, pero comúnmente es un objeto de tipo Error.
+
 * Ejemplo: throw new Error("Mensaje de error");
 - finally: Es un bloque opcional que se ejecuta después de try y catch, sin importar si ocurrió o no un error.
 Es útil para realizar limpiezas o liberación de recursos, como cerrar archivos o conexiones.
 - try...catch: Se utiliza para envolver el código que puede producir errores.
 Si ocurre un error dentro del bloque try, la ejecución se transfiere al bloque catch.
+
 * Ejemplo:
  *   try {
  *     // Código que puede fallar

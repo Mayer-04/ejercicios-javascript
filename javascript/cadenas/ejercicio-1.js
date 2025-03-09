@@ -1,6 +1,10 @@
-/* 
-Programa una función que cuente el número de caracteres de una cadena de texto. 
-- Haz todas las validaciones necesarias. 
+/*
+Contador de caracteres
+
+Programa una función que cuente el número de caracteres de una cadena de texto.
+- Haz todas las validaciones necesarias.
+
+Ejemplo: En "Avión" debería devolver 5.
 */
 
 const numeroCaracteres = (cadena) => {

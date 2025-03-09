@@ -11,7 +11,7 @@ const persona = {
   apellido: "Chaves",
   edad: 24,
 };
-console.log("Objeto literal:", persona);
+console.log("Objeto literal:", persona); // { nombre: 'Mayer', apellido: 'Chaves', edad: 24 }
 
 // 2. Función constructora.
 // Antes de la llegada de clases en ES6,
@@ -38,17 +38,17 @@ const prototipoPersona = {
 };
 
 const persona2 = Object.create(prototipoPersona);
-console.log("persona2:", persona2);
+console.log("persona2:", persona2); // {}
 persona2.nombre = "Mayer";
 persona2.apellido = "Chaves";
 persona2.edad = 24;
-console.log("Object.create():", persona2);
-persona2.saludar(); // Ejemplo de llamada a un método heredado
+console.log("Object.create():", persona2); // { nombre: 'Mayer', apellido: 'Chaves', edad: 24 }
+persona2.saludar(); // Ejemplo de llamada a un método heredado: 'Hola, soy Mayer Chaves.'
 
 // 4. Object.assign().
 // 'Object.assign()' copia las propiedades de uno o más objetos a un objeto destino, retornando dicho objeto.
 const persona3 = Object.assign({}, persona2); // Crea una copia superficial de 'persona2'
-console.log("Object.assign():", persona3);
+console.log("Object.assign():", persona3); // { nombre: 'Mayer', apellido: 'Chaves', edad: 24 }
 
 // 5. Spread Operator (operador de propagación).
 // El spread operator ('...') permite copiar propiedades de un objeto a otro de manera simple y legible.

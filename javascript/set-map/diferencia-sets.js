@@ -15,7 +15,17 @@ const diferenciaSets = function (set1, set2) {
   return nuevoSet;
 };
 
+const differenceSets = (set1, set2) => {
+  const difference = new Set(set1);
+
+  for (const element of set2) {
+    difference.delete(element);
+  }
+
+  return difference;
+};
+
 const primerSet = new Set(["JavaScript", "Go", "Rust"]);
 const segundoSet = new Set(["Ruby", "Java", "Rust", "C"]);
 
-console.log(diferenciaSets(primerSet, segundoSet));
+console.log(diferenciaSets(primerSet, segundoSet)); // Set(2) { 'JavaScript', 'Go' }

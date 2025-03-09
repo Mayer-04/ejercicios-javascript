@@ -4,7 +4,7 @@
 */
 
 const numero = 123456.789;
-console.log(numero.toLocaleString());
+console.log(numero.toLocaleString()); // 123.456,789
 
 // Utilizando la barra baja para separar el separador de miles
 const numero2 = 1_000_000;

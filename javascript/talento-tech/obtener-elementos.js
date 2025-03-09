@@ -1,7 +1,19 @@
 /* Ejercicio:
-Crea una función que reciba dos array, un booleano y retorne un array.
-- Si el booleano es verdadero buscará y retornará los elementos comunes de los dos array.
-- Si el booleano es falso buscará y retornará los elementos no comunes de los dos array.
+Escribe una función en JavaScript que reciba los siguientes parámetros:
+  
+- Dos arrays de cualquier tipo de elementos.
+- Un valor booleano.
+
+La función debe devolver un nuevo array con los siguientes criterios:
+- Si el booleano es `true`, el array resultante contendrá solo los elementos que sean comunes en ambos arrays.
+- Si el booleano es `false`, el array resultante contendrá los elementos que no se repiten en ambos arrays.
+
+Ejemplo de uso:
+  entrada: ([1, 2, 3], [2, 3, 4], true)
+  salida: [2, 3]
+
+  entrada: ([1, 2, 3], [2, 3, 4], false)
+  salida: [1, 4]
 */
 
 /**

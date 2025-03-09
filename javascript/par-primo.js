@@ -25,11 +25,24 @@ const isPrime = (numero) => {
   if (numero <= 1) {
     return false;
   }
-
-  for (let i = 2; i < numero; i++) { // 2  < 3, si
-    if (numero % i === 0) { // 3 % 2 === 0, no
+  // 2  < 3, si
+  for (let i = 2; i < numero; i++) {
+    if (numero % i === 0) {
+      // 3 % 2 === 0, no
       return false;
     }
+  }
+
+  return true;
+};
+
+const isPrime = (numero) => {
+  if (numero <= 1) return false;
+  if (numero === 2) return true;
+  if (numero % 2 === 0) return false;
+
+  for (let i = 3; i * i <= numero; i += 2) {
+    if (numero % i === 0) return false;
   }
 
   return true;

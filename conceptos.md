@@ -40,18 +40,3 @@ Es una representación en forma de árbol del contenido de un documento HTML. No
 ### Window Object:
 
 Es el objeto global en el navegador que representa la ventana del navegador. Además del DOM tiene acceso a otros recursos como el historial y la localización. Permite también interactuar con hardware a través de API específicas.
-
-- Citas
-  > Mayer Andres Chaves Prada
-- Listas desordenadas
-  Se hace con \* o -
-
-Separación
-
----
-***
-
-
-LINKS O ENLACES
-
-[google](http://www.limni.net)

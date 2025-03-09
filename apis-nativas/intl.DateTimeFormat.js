@@ -1,5 +1,6 @@
 // Obtener la fecha y hora actual
 const fechaActual = new Date();
+console.log(fechaActual); // Output: 2025-01-29T03:02:40.661Z
 
 // Formatear la fecha y hora según la configuración regional del usuario
 let formatoFechaHora = new Intl.DateTimeFormat("es-CO", {
