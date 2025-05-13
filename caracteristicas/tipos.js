@@ -1,7 +1,7 @@
 /*
 * Tipos en JavaScript
 - Utilizamos el operador `typeof` para obtener el tipo de dato de un valor.
-- Hay 9 tipos de datos en JavaScript: number, string, boolean, object, symbol, bigint, null y undefined.
+- Hay 8 tipos de datos en JavaScript: number, string, boolean, object, symbol, bigint, null y undefined.
 - Con la propiedad `constructor.name` podemos obtener el nombre del tipo de constructor que se utiliza.
 */
 
